@@ -15,8 +15,8 @@ const Works = () => {
 					<div className="works-body">
 						<div className="work">
 							<img
-								src="./isro.png"
-								alt="facebook"
+								src="https://firebasestorage.googleapis.com/v0/b/portfolio-215a2.appspot.com/o/isro.png?alt=media&token=eaf5d4f4-f527-415c-a020-654d0406eee6"
+								alt="ISRO"
 								className="work-image"
 							/>
 							<div className="work-title">ISRO Propulsion Complex</div>
@@ -28,8 +28,8 @@ const Works = () => {
 
 						<div className="work">
 							<img
-								src="./mlsa.png"
-								alt="twitter"
+								src="https://firebasestorage.googleapis.com/v0/b/portfolio-215a2.appspot.com/o/mlsa.png?alt=media&token=92c703c5-d991-4321-878a-96f44f4df0d1"
+								alt="MLSA"
 								className="work-image"
 							/>
 							<div className="work-title">Microsoft Learn</div>

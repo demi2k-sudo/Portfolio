@@ -3,7 +3,7 @@ const INFO = {
 		title: "Portfolio",
 		name: "Naboth Demetrius R",
 		email: "nabothdemetrius@gmail.com",
-		logo: "../logo.jpg",
+		logo: "https://firebasestorage.googleapis.com/v0/b/portfolio-215a2.appspot.com/o/logo.jpg?alt=media&token=6ee84ccf-aa21-4ebc-bad6-68cdd56939b1",
 	},
 
 	socials: {

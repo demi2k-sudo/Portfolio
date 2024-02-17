@@ -13,7 +13,7 @@ const Logo = (props) => {
 	}
 
 	const imageElement = (
-		<img src="../../../public/logo.jpg" alt="logo" className="logo" width={width} />
+		<img src="https://firebasestorage.googleapis.com/v0/b/portfolio-215a2.appspot.com/o/logo.jpg?alt=media&token=6ee84ccf-aa21-4ebc-bad6-68cdd56939b1" alt="logo" className="logo" width={width} />
 	);
 
 	return (

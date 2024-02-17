@@ -54,7 +54,7 @@ const About = () => {
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
 										<img
-											src="../../public/about.jpg"
+											src="https://firebasestorage.googleapis.com/v0/b/portfolio-215a2.appspot.com/o/about.jpg?alt=media&token=1d0b0f04-26a0-4db3-88bd-6b93bc1964f8"
 											alt="about"
 											className="about-image"
 										/>
