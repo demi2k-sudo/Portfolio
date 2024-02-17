@@ -105,7 +105,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="../../public/homepage.jpg"
+											src="https://firebasestorage.googleapis.com/v0/b/portfolio-215a2.appspot.com/o/homepage.jpg?alt=media&token=a087e72f-9d2d-42d0-b5d1-d304c1c9b782"
 											alt="about"
 											className="homepage-image"
 										/>
