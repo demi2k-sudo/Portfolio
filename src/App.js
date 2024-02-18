@@ -12,18 +12,16 @@ import Notfound from "./pages/404";
 
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
-	useEffect(() => {
-		if (TRACKING_ID !== "") {
-			ReactGA.initialize(TRACKING_ID);
-		}
-	}, []);
+
 
 	return (
 		<div className="App">
+			<AnimatePresence mode="wait">
 			<Routes>
-				<Route path="/" element={<Homepage />} />
+				<Route path="/Portfolio" element={<Homepage />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/projects" element={<Projects />} />
 				<Route path="/articles" element={<Articles />} />
@@ -31,6 +29,7 @@ function App() {
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<Homepage />} />
 			</Routes>
+			</AnimatePresence>
 		</div>
 	);
 }

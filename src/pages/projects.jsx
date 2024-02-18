@@ -10,7 +10,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/projects.css";
-
+import transition from "../components/transition";
 const Projects = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -66,4 +66,4 @@ const Projects = () => {
 	);
 };
 
-export default Projects;
+export default transition(Projects);

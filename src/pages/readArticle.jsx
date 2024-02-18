@@ -9,7 +9,7 @@ import Logo from "../components/common/logo";
 
 import INFO from "../data/user";
 import myArticles from "../data/articles";
-
+import transition from "../components/transition";
 import "./styles/readArticle.css";
 
 let ArticleStyle = styled.div``;
@@ -81,4 +81,4 @@ const ReadArticle = () => {
 	);
 };
 
-export default ReadArticle;
+export default transition(ReadArticle);

@@ -10,7 +10,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/contact.css";
-
+import transition from "../components/transition";
 const Contact = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -85,4 +85,4 @@ const Contact = () => {
 	);
 };
 
-export default Contact;
+export default transition(Contact);

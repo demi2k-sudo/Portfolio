@@ -9,7 +9,7 @@ import Article from "../components/articles/article";
 import INFO from "../data/user";
 import SEO from "../data/seo";
 import myArticles from "../data/articles";
-
+import transition from "../components/transition";
 import "./styles/articles.css";
 
 const Articles = () => {
@@ -76,5 +76,5 @@ const Articles = () => {
 	);
 };
 
-export default Articles;
+export default transition(Articles);
 

@@ -24,6 +24,8 @@ import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
 
+import transition from "../components/transition";
+
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
@@ -185,4 +187,4 @@ const Homepage = () => {
 	);
 };
 
-export default Homepage;
+export default transition(Homepage);

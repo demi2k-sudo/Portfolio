@@ -8,7 +8,7 @@ import Socials from "../components/about/socials";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-
+import transition from "../components/transition";
 import "./styles/about.css";
 
 const About = () => {
@@ -79,4 +79,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default transition(About);
