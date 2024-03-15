@@ -8,11 +8,13 @@ import Socials from "../components/about/socials";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-
+import Aos from "aos";
+import 'aos/dist/aos.css';
 import "./styles/contact.css";
 import transition from "../components/transition";
 const Contact = () => {
 	useEffect(() => {
+		Aos.init({duration:2000});
 		window.scrollTo(0, 0);
 	}, []);
 
@@ -39,11 +41,11 @@ const Contact = () => {
 					</div>
 
 					<div className="contact-container">
-						<div className="title contact-title">
+						<div className="title contact-title" data-aos = 'fade-up'>
 							Let's Get in Touch: Ways to Connect with Me
 						</div>
 
-						<div className="subtitle contact-subtitle">
+						<div className="subtitle contact-subtitle" data-aos = 'fade-up'>
 							Thank you for your interest in getting in touch with
 							me. I welcome your feedback, questions, and
 							suggestions. If you have a specific question or
@@ -70,7 +72,7 @@ const Contact = () => {
 						</div>
 					</div>
 
-					<div className="socials-container">
+					<div className="socials-container" data-aos = 'fade-up'>
 						<div className="contact-socials">
 							<Socials />
 						</div>

@@ -10,9 +10,11 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 import transition from "../components/transition";
 import "./styles/about.css";
-
+import Aos from "aos";
+import 'aos/dist/aos.css';
 const About = () => {
 	useEffect(() => {
+		Aos.init({duration:2000});
 		window.scrollTo(0, 0);
 	}, []);
 
@@ -38,7 +40,7 @@ const About = () => {
 						</div>
 					</div>
 
-					<div className="about-container">
+					<div className="about-container" data-aos = 'fade-up'>
 						<div className="about-main">
 							<div className="about-right-side">
 								<div className="title about-title">
@@ -50,7 +52,7 @@ const About = () => {
 								</div>
 							</div>
 
-							<div className="about-left-side">
+							<div className="about-left-side" data-aos = 'fade-up'>
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
 										<img
@@ -61,12 +63,12 @@ const About = () => {
 									</div>
 								</div>
 
-								<div className="about-socials">
+								<div className="about-socials " data-aos = 'fade-up'>
 									<Socials />
 								</div>
 							</div>
 						</div>
-						<div className="about-socials-mobile">
+						<div className="about-socials-mobile" data-aos = 'fade-up'>
 							<Socials />
 						</div>
 					</div>

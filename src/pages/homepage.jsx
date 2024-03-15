@@ -25,6 +25,8 @@ import myArticles from "../data/articles";
 import "./styles/homepage.css";
 
 import transition from "../components/transition";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -36,6 +38,7 @@ const Homepage = () => {
 	}, []);
 
 	useEffect(() => {
+		Aos.init({duration:2000});
 		const handleScroll = () => {
 			let scroll = Math.round(window.pageYOffset, 2);
 
@@ -85,13 +88,13 @@ const Homepage = () => {
 			<div className="page-content">
 				<NavBar active="home" />
 				<div className="content-wrapper">
-					<div className="homepage-logo-container">
+					<div className="homepage-logo-container" data-aos = 'fade-up'>
 						<div style={logoStyle}>
 							<Logo width={logoSize} link={false} />
 						</div>
 					</div>
 
-					<div className="homepage-container">
+					<div className="homepage-container" data-aos = 'fade-up'>
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">
@@ -103,7 +106,7 @@ const Homepage = () => {
 								</div>
 							</div>
 
-							<div className="homepage-first-area-right-side">
+							<div className="homepage-first-area-right-side" data-aos = 'fade-up'>
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
@@ -116,7 +119,7 @@ const Homepage = () => {
 							</div>
 						</div>
 
-						<div className="homepage-socials">
+						<div className="homepage-socials" data-aos = 'fade-up'>
 							
 							<a
 								href={INFO.socials.github}
@@ -166,18 +169,18 @@ const Homepage = () => {
 							</a>
 						</div>
 
-						<div className="homepage-projects">
+						<div data-aos = 'fade-up' className="homepage-projects">
 							<AllProjects />
 						</div>
 
-						<div className="homepage-after-title">
+						<div className="homepage-after-title" data-aos = 'fade-up'>
 
 							<div className="homepage-works">
 								<Works />
 							</div>
 						</div>
 
-						<div className="page-footer">
+						<div className="page-footer" >
 							<Footer />
 						</div>
 					</div>

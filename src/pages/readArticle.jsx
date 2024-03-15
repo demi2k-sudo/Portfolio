@@ -11,7 +11,8 @@ import INFO from "../data/user";
 import myArticles from "../data/articles";
 import transition from "../components/transition";
 import "./styles/readArticle.css";
-
+import Aos from "aos";
+import 'aos/dist/aos.css';
 let ArticleStyle = styled.div``;
 
 const ReadArticle = () => {
@@ -21,6 +22,7 @@ const ReadArticle = () => {
 	const article = myArticles[slug - 1];
 
 	useEffect(() => {
+		Aos.init({duration:2000});
 		window.scrollTo(0, 0);
 	}, [article]);
 
@@ -46,7 +48,7 @@ const ReadArticle = () => {
 						</div>
 					</div>
 
-					<div className="read-article-container">
+					<div className="read-article-container" data-aos = 'fade-up'>
 						<div className="read-article-back">
 							<img
 								src="../back-button.png"

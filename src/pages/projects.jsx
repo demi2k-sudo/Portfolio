@@ -8,11 +8,13 @@ import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-
+import Aos from "aos";
+import 'aos/dist/aos.css';
 import "./styles/projects.css";
 import transition from "../components/transition";
 const Projects = () => {
 	useEffect(() => {
+		Aos.init({duration:2000});
 		window.scrollTo(0, 0);
 	}, []);
 
@@ -38,11 +40,11 @@ const Projects = () => {
 						</div>
 					</div>
 					<div className="projects-container">
-						<div className="title projects-title">
+						<div className="title projects-title" data-aos = 'fade-up'>
 							Welcome to my Gallery!
 						</div>
 
-						<div className="subtitle projects-subtitle">
+						<div className="subtitle projects-subtitle" data-aos = 'fade-up'>
 							I've worked on a variety of projects over the years
 							and I've put here some interesting ones. If you're
 							interested in any of the projects I've worked on,
@@ -53,7 +55,7 @@ const Projects = () => {
 							feedback. You can check my Github for more!
 						</div>
 
-						<div className="projects-list">
+						<div className="projects-list" data-aos = 'fade-up'>
 							<AllProjects />
 						</div>
 					</div>

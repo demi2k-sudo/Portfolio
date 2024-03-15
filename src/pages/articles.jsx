@@ -11,9 +11,11 @@ import SEO from "../data/seo";
 import myArticles from "../data/articles";
 import transition from "../components/transition";
 import "./styles/articles.css";
-
+import Aos from "aos";
+import 'aos/dist/aos.css';
 const Articles = () => {
 	useEffect(() => {
+		Aos.init({duration:2000});
 		window.scrollTo(0, 0);
 	}, []);
 
@@ -39,7 +41,7 @@ const Articles = () => {
 						</div>
 					</div>
 
-					<div className="articles-main-container">
+					<div className="articles-main-container" data-aos = 'fade-up'>
 						<div className="title articles-title">
 							{INFO.articles.title}
 						</div>
@@ -49,11 +51,12 @@ const Articles = () => {
 						</div>
 
 						<div className="articles-container">
-							<div className="articles-wrapper">
+							<div className="articles-wrapper" >
 								{myArticles.map((article, index) => (
 									<div
 										className="articles-article"
 										key={(index + 1).toString()}
+										data-aos = 'fade-up'
 									>
 										<Article
 											key={(index + 1).toString()}
